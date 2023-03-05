@@ -7,7 +7,7 @@ public class CryptoKey {
 
     public static int getKeyForEncryption() {
         Scanner console = new Scanner(System.in);
-        System.out.println("Укажите ключ для шифрования (целое число):");
+        System.out.println("Укажите ключ шифрования (целое число):");
         String key = console.nextLine();
         while (!isNumeric(key)) {
             System.out.println("Нужно ввести ЦЕЛОЕ число! Укажите ключ для шифрования: ");
