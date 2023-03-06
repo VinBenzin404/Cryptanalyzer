@@ -1,5 +1,7 @@
 package com.javarush.cryptanalyzer.abdeev.repository;
 
+import com.javarush.cryptanalyzer.abdeev.constants.Alphabet;
+
 import java.util.Scanner;
 
 public class CryptoKey {
@@ -13,7 +15,9 @@ public class CryptoKey {
             System.out.println("Нужно ввести ЦЕЛОЕ число! Укажите ключ для шифрования: ");
             key = console.nextLine();
         }
-        return Integer.parseInt(key);
+
+
+        return Math.abs((Integer.parseInt(key))% Alphabet.ALPHABET.length());
 
 
     }

@@ -8,15 +8,15 @@ public class DataOutputToUser {
     public static Path createResultFile(Path pathOfOriginalFile){
         String pathStr = pathOfOriginalFile.toString();
         String newFileDir = Path.of(pathStr).getParent().toString();
-        Path newFilePath = Path.of(newFileDir+"\\Result Text File.txt");
+        Path newFilePath = Path.of(newFileDir+"\\0.txt");
         int i=1;
         while(Files.exists(newFilePath)){
 
-            newFilePath = Path.of(newFileDir+"\\Result Text File("+i+").txt");
+            newFilePath = Path.of(newFileDir+"\\"+i+".txt"); ////// МСПРАВИТЬ НАЗВАНИЕ ВЫВООДА
             i++;
 
         }
-//
+
 
         try {
             Files.createFile(newFilePath);

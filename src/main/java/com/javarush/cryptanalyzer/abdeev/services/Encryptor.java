@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class Encryptor {
 
 
-    public static String encryptor(String originalText, int key){
+    public static String encryptor(String originalText, int passWord){
 
         char[] originalTextChars = originalText.toCharArray();
 
@@ -20,21 +20,20 @@ public class Encryptor {
 
         int charIndex;
 
-        HashMap<Character,Integer> mapOfAlphabet = new HashMap<>();
-        for (int i = 0; i < cryptoAlphabetChars.length; i++) {
-            mapOfAlphabet.put(cryptoAlphabetChars[i],i);
-        }
-            //Цикл строит массив символов resultTextChars из зашифрованных символов
+        HashMap<Character,Integer> mapOfAlphabet = Alphabet.toMapAlphabet();
+
+
         for (int i = 0; i < originalTextChars.length; i++) {
-            //Проверка на наличие очередного символа из ориг. текста в криптоалфавите
+
             if(mapOfAlphabet.containsKey(originalTextChars[i])){
                 charIndex = mapOfAlphabet.get(originalTextChars[i]);}
-            //Если символа нет в криптоалфавите оставляем символ в незашифрованном виде
             else {resultTextChars[i]=originalTextChars[i];
                     continue;}
-            //учитываем что ключ может быть отрицательным числом или быть больше чем длинна массива символов криптоалфавита
-           if(charIndex+key>0) resultTextChars[i]=cryptoAlphabetChars[(charIndex+key)%cryptoAlphabetChars.length];
-            else resultTextChars[i]=cryptoAlphabetChars[(charIndex+key)%cryptoAlphabetChars.length+cryptoAlphabetChars.length];
+
+            resultTextChars[i]=cryptoAlphabetChars[(charIndex+passWord)%cryptoAlphabetChars.length];
+
+
+
 
         }
         return String.valueOf(resultTextChars);
