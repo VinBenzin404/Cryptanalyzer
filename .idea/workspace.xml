@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Cryptanalyzer:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ade08afc-2143-4679-ac02-c85532a9df0f" name="Changes" comment="Initialization" />
+    <list default="true" id="ade08afc-2143-4679-ac02-c85532a9df0f" name="Changes" comment="Initialization">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/services/CodeCracker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/constants/Alphabet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/constants/Alphabet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/controllers/ProgramMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/controllers/ProgramMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/repository/CryptoKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/repository/CryptoKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/repository/DataOutputToUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/repository/DataOutputToUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/services/Decoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/services/Decoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/services/Encryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/abdeev/services/Encryptor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2MW0eveIaMEiJODzqQs3po76k5j" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -24,28 +49,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/JAVAProjects/Cryptanalyzer&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last.edited.regexp": "ть ласковых хозяев и тёплый кров. Один из проверенных способов это сделать — помоч",
+    "last_opened_file_path": "C:/JAVAProjects/Cryptanalyzer",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javarush.cryptanalyzer.abdeev.Main" />
       <module name="Cryptanalyzer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javarush.cryptanalyzer.abdeev.*" />
+          <option name="PATTERN" value="com.javarush.cryptanalyzer.abdeev.constants.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,7 +111,56 @@
       <option name="project" value="LOCAL" />
       <updated>1677932522811</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="idea ignored">
+      <created>1677933841515</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677933841515</updated>
+    </task>
+    <task id="LOCAL-00004" summary="alphabet class added">
+      <created>1677935652290</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677935652290</updated>
+    </task>
+    <task id="LOCAL-00005" summary="additional packages added, realyzed encrypt fuction">
+      <created>1677963183331</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677963183331</updated>
+    </task>
+    <task id="LOCAL-00006" summary="realised decode function">
+      <created>1678006933319</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678006933319</updated>
+    </task>
+    <task id="LOCAL-00007" summary="realised decode function">
+      <created>1678006948201</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678006948201</updated>
+    </task>
+    <task id="LOCAL-00008" summary="all required functions realised">
+      <created>1678088122829</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678088122829</updated>
+    </task>
+    <task id="LOCAL-00009" summary="all required functions realised">
+      <created>1678089378178</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678089378178</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +176,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialization" />
+    <MESSAGE value="idea ignored" />
+    <MESSAGE value="alphabet class added" />
+    <MESSAGE value="additional packages added, realyzed encrypt fuction" />
+    <MESSAGE value="realised decode function" />
+    <MESSAGE value="all required functions realised" />
+    <option name="LAST_COMMIT_MESSAGE" value="all required functions realised" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.NoSuchElementException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

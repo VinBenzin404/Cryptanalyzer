@@ -15,11 +15,7 @@ public class CryptoKey {
             System.out.println("Нужно ввести ЦЕЛОЕ число! Укажите ключ для шифрования: ");
             key = console.nextLine();
         }
-
-
         return Math.abs((Integer.parseInt(key))% Alphabet.ALPHABET.length());
-
-
     }
 
     public static boolean isNumeric(String strNum) {

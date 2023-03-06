@@ -10,7 +10,5 @@ public class Decoder {
            return Encryptor.encryptor(originalText, Alphabet.ALPHABET.length()-key);
 
 
-
-
     }
 }

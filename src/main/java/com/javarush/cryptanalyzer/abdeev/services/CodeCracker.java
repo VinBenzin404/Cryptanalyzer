@@ -1,9 +1,6 @@
 package com.javarush.cryptanalyzer.abdeev.services;
 
 import com.javarush.cryptanalyzer.abdeev.constants.Alphabet;
-
-
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

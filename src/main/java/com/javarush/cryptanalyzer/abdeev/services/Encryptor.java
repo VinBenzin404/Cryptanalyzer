@@ -1,10 +1,6 @@
 package com.javarush.cryptanalyzer.abdeev.services;
 
-
-
 import com.javarush.cryptanalyzer.abdeev.constants.Alphabet;
-
-
 import java.util.HashMap;
 
 public class Encryptor {
@@ -32,14 +28,8 @@ public class Encryptor {
 
             resultTextChars[i]=cryptoAlphabetChars[(charIndex+passWord)%cryptoAlphabetChars.length];
 
-
-
-
         }
         return String.valueOf(resultTextChars);
-
-
-
 
     }
 }
