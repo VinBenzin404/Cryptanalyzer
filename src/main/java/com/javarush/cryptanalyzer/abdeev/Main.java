@@ -4,7 +4,7 @@ import com.javarush.cryptanalyzer.abdeev.controllers.ProgramMode;
 
 public class Main {
     public static void main(String[] args) {
-        ProgramMode.start();
+        new ProgramMode().start();
     }
 }
 
