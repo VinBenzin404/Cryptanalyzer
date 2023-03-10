@@ -1,8 +1,8 @@
 package com.javarush.cryptanalyzer.abdeev.controllers;
 
 import com.javarush.cryptanalyzer.abdeev.repository.CryptoKey;
-import com.javarush.cryptanalyzer.abdeev.repository.DataOutputToUser;
-import com.javarush.cryptanalyzer.abdeev.repository.FileInputFromUser;
+import com.javarush.cryptanalyzer.abdeev.repository.DataOutput;
+import com.javarush.cryptanalyzer.abdeev.repository.FileInput;
 import com.javarush.cryptanalyzer.abdeev.services.CodeCracker;
 import com.javarush.cryptanalyzer.abdeev.services.Decoder;
 import com.javarush.cryptanalyzer.abdeev.services.Encryptor;
@@ -12,6 +12,8 @@ import java.util.Scanner;
 
 public class ProgramMode {
     int mode;
+
+    //Выбор режима работы
     private int programStart(){
 
         do {
@@ -28,21 +30,37 @@ public class ProgramMode {
         return  mode;
     }
 
-    public static void start(){
+
+    //Режимы работы программы
+
+    public void start(){
         ProgramMode programMode = new ProgramMode();
 
         switch (programMode.programStart()) {
             case 1 -> {
-                String codedText = (Encryptor.encryptor(FileInputFromUser.getTextForEncryption(), CryptoKey.getKeyForEncryption()));
-                DataOutputToUser.writeResultToFile(codedText);
+                String inputFile = FileInput.getTextForEncryption();
+
+                int cryptoKey = CryptoKey.getKeyForEncryption();
+
+                String codedText = (Encryptor.encryptor(inputFile, cryptoKey));
+                DataOutput.writeResultToFile(codedText);
+                System.out.println("Успешно!");
             }
             case 2 -> {
-                String decodedText = (Decoder.decoder(FileInputFromUser.getTextForEncryption(), CryptoKey.getKeyForEncryption()));
-                DataOutputToUser.writeResultToFile(decodedText);
+                String inputFile = FileInput.getTextForEncryption();
+
+                int cryptoKey = CryptoKey.getKeyForEncryption();
+
+                String decodedText = (Decoder.decoder(inputFile, cryptoKey));
+                DataOutput.writeResultToFile(decodedText);
+                System.out.println("Успешно!");
             }
             case 3 -> {
-                String decodedText = CodeCracker.codeBreak(FileInputFromUser.getTextForEncryption());
-                DataOutputToUser.writeResultToFile(decodedText);
+                String inputFile = FileInput.getTextForEncryption();
+
+                String decodedText = CodeCracker.codeBreak(inputFile);
+                DataOutput.writeResultToFile(decodedText);
+                System.out.println("Успешно!");
 
             }
         }

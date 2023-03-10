@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class DataOutputToUser {
+public class DataOutput {
     public static Path createResultFile(Path pathOfOriginalFile){
         String pathStr = pathOfOriginalFile.toString();
         String newFileDir = Path.of(pathStr).getParent().toString();
@@ -27,7 +27,7 @@ public class DataOutputToUser {
     }
 
     public static void writeResultToFile(String result){
-        Path resultFile = createResultFile(FileInputFromUser.pathOfOriginalFile);
+        Path resultFile = createResultFile(FileInput.pathOfOriginalFile);
         try {
             Files.writeString(resultFile,result);
         } catch (IOException e) {

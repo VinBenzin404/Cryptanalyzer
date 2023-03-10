@@ -16,7 +16,12 @@ public class Encryptor {
 
         int charIndex;
 
-        HashMap<Character,Integer> mapOfAlphabet = Alphabet.toMapAlphabet();
+        char[]array = Alphabet.ALPHABET.toCharArray();
+
+        HashMap<Character,Integer> mapOfAlphabet = new HashMap<>();
+        for (int i = 0; i < array.length; i++) {
+            mapOfAlphabet.put(array[i],i);
+        }
 
 
         for (int i = 0; i < originalTextChars.length; i++) {

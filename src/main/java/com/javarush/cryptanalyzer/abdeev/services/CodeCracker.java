@@ -17,7 +17,7 @@ public class CodeCracker {
 
         while(maybeKey<Alphabet.ALPHABET.length()){
             if(m.find()){
-                System.out.println("Key: "+(Alphabet.ALPHABET.length()-maybeKey)%Alphabet.ALPHABET.length());
+                System.out.println("Ключ использовавшийся для шифрования: "+(Alphabet.ALPHABET.length()+maybeKey)%Alphabet.ALPHABET.length());
                 return text;
             }else{
                 maybeKey++;
