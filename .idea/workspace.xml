@@ -167,7 +167,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678089378178</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added default file selection">
+      <created>1679071331102</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679071331102</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added default file selection">
+      <created>1679072156702</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679072156702</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,7 +202,8 @@
     <MESSAGE value="additional packages added, realyzed encrypt fuction" />
     <MESSAGE value="realised decode function" />
     <MESSAGE value="all required functions realised" />
-    <option name="LAST_COMMIT_MESSAGE" value="all required functions realised" />
+    <MESSAGE value="added default file selection" />
+    <option name="LAST_COMMIT_MESSAGE" value="added default file selection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
