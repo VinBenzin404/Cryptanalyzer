@@ -20,6 +20,7 @@ public  class FileInput {
         System.out.println("Укажите ссылку на файл:");
         Scanner console = new Scanner(System.in);
         String pathStr = console.nextLine();
+        if(!pathStr.equals("")){
         Path pathOfFile = Path.of(pathStr);
          while(!Files.isRegularFile(pathOfFile)){
              System.out.println("Файл по вашей ссылке не найден! Укажите действительный путь к файлу: ");
@@ -27,6 +28,10 @@ public  class FileInput {
              pathOfFile = Path.of(pathStr);}
          pathOfOriginalFile=pathOfFile;
          return pathOfFile;
+        }else{
+            pathOfOriginalFile=Path.of("src/main/java/com/javarush/cryptanalyzer/abdeev/files/input.txt");
+             return pathOfOriginalFile;
+        }
 
     }
 

@@ -8,11 +8,11 @@ public class DataOutput {
     public static Path createResultFile(Path pathOfOriginalFile){
         String pathStr = pathOfOriginalFile.toString();
         String newFileDir = Path.of(pathStr).getParent().toString();
-        Path newFilePath = Path.of(newFileDir+"\\0.txt");
+        Path newFilePath = Path.of(newFileDir+"\\output.txt");
         int i=1;
         while(Files.exists(newFilePath)){
 
-            newFilePath = Path.of(newFileDir+"\\"+i+".txt"); ////// МСПРАВИТЬ НАЗВАНИЕ ВЫВООДА
+            newFilePath = Path.of(newFileDir+"\\"+"output"+i+".txt");
             i++;
 
         }
