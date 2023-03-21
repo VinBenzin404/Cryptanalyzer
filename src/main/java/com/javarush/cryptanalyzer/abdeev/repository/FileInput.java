@@ -2,6 +2,8 @@ package com.javarush.cryptanalyzer.abdeev.repository;
 
 
 
+import com.javarush.cryptanalyzer.abdeev.controllers.ProgramMode;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -29,7 +31,8 @@ public  class FileInput {
          pathOfOriginalFile=pathOfFile;
          return pathOfFile;
         }else{
-            pathOfOriginalFile=Path.of("src/main/java/com/javarush/cryptanalyzer/abdeev/files/input.txt");
+            if(ProgramMode.mode==1){pathOfOriginalFile=Path.of("input.txt");}
+            if(ProgramMode.mode==2 || ProgramMode.mode==3){pathOfOriginalFile=Path.of("encoded.txt");}
              return pathOfOriginalFile;
         }
 

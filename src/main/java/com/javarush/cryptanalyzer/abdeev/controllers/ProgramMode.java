@@ -11,7 +11,7 @@ import com.javarush.cryptanalyzer.abdeev.services.Encryptor;
 import java.util.Scanner;
 
 public class ProgramMode {
-    public int mode;
+    public static int mode;
 
     //Выбор режима работы
     private int programStart(){
